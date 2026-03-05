@@ -1,0 +1,62 @@
+{
+  "generated_at_utc": "2026-03-05T12:21:57Z",
+  "ready": true,
+  "inputs_redacted": true,
+  "checks": [
+    {
+      "name": "c06_push_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "maintrack_before_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "maintrack_after_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "three_point_csv_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "repeat_stability_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "quality_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "non_ort_release_gate",
+      "pass": true,
+      "errors": []
+    },
+    {
+      "name": "mlflow_evidence_gate",
+      "pass": true,
+      "errors": []
+    }
+  ],
+  "inputs": {
+    "c06_meta": "torch_push_pipeline_meta.json",
+    "fourtrack_before_meta": "pipeline_meta.json",
+    "fourtrack_after_meta": "pipeline_meta.json",
+    "three_point_csv": "three_point_metrics.csv",
+    "repeat_stability_json": "repeat_stability.json",
+    "quality_report_json": "quality_report.json",
+    "main_track_required_backends": [
+      "llama",
+      "mlc",
+      "torch_rocm"
+    ],
+    "non_ort_release_gate_json": "non_ort_release_gate.json",
+    "mlflow_evidence_json": "mlflow_evidence.json"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-03-02T10:49:43Z",
+  "baseline_r5_tps": 5.067,
+  "tps_guardrail": 4.81365,
+  "rule": {
+    "hard_constraints": [
+      "eligible == true",
+      "fallback_triggered == false",
+      "runtime_device_fallback == false",
+      "ttft_signal_source != request_latency_fallback",
+      "tps_mean >= 0.95 * baseline_r5_tps"
+    ],
+    "selection": "min ttft_p50_ms among qualified"
+  },
+  "candidate_count": 4,
+  "qualified_count": 4,
+  "selected_experiment_id": "O4",
+  "selected": {
+    "experiment_id": "O4",
+    "ttft_p50_ms": 377.929,
+    "tps_mean": 5.098,
+    "sdpa_profile_effective": "flash_only",
+    "compile_requested": true,
+    "compile_enabled": true,
+    "compile_mode": "reduce-overhead"
+  },
+  "qualified_experiments": [
+    "O1",
+    "O2",
+    "O3",
+    "O4"
+  ]
+}

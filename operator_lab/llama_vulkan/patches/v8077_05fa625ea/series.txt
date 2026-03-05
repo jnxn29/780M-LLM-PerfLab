@@ -1,0 +1,5 @@
+# Patch queue for llama.cpp operator-lab (v8077 / 05fa625ea)
+# One patch path per line, relative to repository root or absolute path.
+# Example:
+# operator_lab/llama_vulkan/patches/v8077_05fa625ea/0001-example.patch
+

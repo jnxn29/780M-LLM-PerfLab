@@ -1,0 +1,56 @@
+{
+  "schema_version": "run_v0",
+  "run_id": "sample_engine_run_001",
+  "timestamp_utc": "2026-02-17T11:00:05Z",
+  "git_commit": "fixtures",
+  "commandline": "python harness/benchctl.py enginebench --backend llama_bench --workload workloads/e0_engine_200_200.yaml --model models/demo.gguf --bench-bin llama-bench --out fixtures/sample_engine_run/",
+  "backend": {
+    "name": "llama_bench",
+    "version": "b0001"
+  },
+  "model": {
+    "path": "models/demo.gguf",
+    "sha256": "demo-model-sha256"
+  },
+  "workload": {
+    "path": "workloads/e0_engine_200_200.yaml",
+    "sha256": "engine-workload-sha256-demo"
+  },
+  "system": {
+    "os_build": "10.0.26200",
+    "driver": "32.0.23017.1001",
+    "cpu": "AMD Ryzen 7 7840HS",
+    "gpu": "AMD Radeon 780M Graphics",
+    "ram_gb": 27.7
+  },
+  "enginebench": {
+    "bench_bin": "llama-bench",
+    "bench_bin_args": "",
+    "bench_extra_args": "",
+    "repetitions": 2,
+    "sweep": {
+      "threads": [
+        4,
+        6,
+        8
+      ],
+      "batch": [
+        512,
+        1024
+      ],
+      "ubatch": [
+        256
+      ],
+      "ngl": [
+        99
+      ]
+    },
+    "top_k": 2
+  },
+  "reproducibility": {
+    "commands": [
+      "python harness/benchctl.py validate --input fixtures/sample_engine_run/metrics.jsonl",
+      "python harness/benchctl.py report --input fixtures/sample_engine_run/ --out reports/ci_engine_demo/"
+    ]
+  }
+}

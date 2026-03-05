@@ -1,0 +1,20 @@
+{
+  "schema_version": "run_v0",
+  "run_id": "broken-run",
+  "timestamp_utc": "2026-02-17T00:00:00Z",
+  "git_commit": "unknown",
+  "commandline": "python harness/benchctl.py servebench --out results/demo/",
+  "backend": {
+    "name": "llama_cpp"
+  },
+  "workload": {
+    "path": "workloads/w0_chat_200_200.yaml",
+    "sha256": "12345678"
+  },
+  "system": {
+    "os_build": "10.0.26100",
+    "cpu": "AMD Ryzen",
+    "gpu": "AMD Radeon 780M",
+    "ram_gb": 32.0
+  }
+}

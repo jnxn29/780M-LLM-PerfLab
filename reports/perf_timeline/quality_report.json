@@ -1,0 +1,9 @@
+{
+  "generated_at_utc": "2026-03-03T21:23:34Z",
+  "ruff_pass": true,
+  "tests_pass": true,
+  "ci_contract_pass": true,
+  "tests_pass_count": 42,
+  "ruff_command": "python -m ruff check harness scripts tests",
+  "tests_command": "pytest -q tests/test_mlflow_logger.py tests/test_exp_spec.py tests/test_build_resume_release_metrics.py tests/test_build_four_track_before_after_metrics.py tests/test_promote_release_candidate.py tests/test_check_release_readiness.py tests/test_verify_release_bundle.py tests/test_collect_torch_rocm_push_report.py tests/test_collect_torch_rocm_operator_sidecar_report.py tests/test_build_perf_timeline_report.py tests/test_run_torch_rocm_push_windows_contract.py tests/test_run_gpu_util_uplift_windows_contract.py tests/test_start_torch_rocm_attach_server_contract.py tests/test_start_ort_attach_server_contract.py"
+}

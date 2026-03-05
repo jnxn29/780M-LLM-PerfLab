@@ -1,0 +1,92 @@
+﻿{
+  "generated_at_utc": "2026-03-05T00:40:26Z",
+  "pass": true,
+  "required_backends": [
+    "llama",
+    "mlc",
+    "torch_rocm"
+  ],
+  "ttft_improve_min": 15.0,
+  "tps_ratio_min": 0.95,
+  "baseline_run_root": "<redacted-path>",
+  "candidate_run_roots": [
+    "<redacted-path>",
+    "<redacted-path>",
+    "<redacted-path>",
+    "<redacted-path>",
+    "<redacted-path>",
+    "<redacted-path>",
+    "<redacted-path>",
+    "<redacted-path>"
+  ],
+  "selected_candidate_run_root": "<redacted-path>",
+  "selected_candidate_run_name": "r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003",
+  "candidates": [
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 716.041,
+      "avg_tps": 11.737
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_low2_ondemand_eager_20260305_1",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 721.1073333333334,
+      "avg_tps": 11.552999999999999
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_low2_ondemand_20260305_1",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 784.66,
+      "avg_tps": 11.734
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_torch_lite_sdpa_compile_20260305_082736",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 786.9063333333334,
+      "avg_tps": 11.896999999999998
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_torch_lite_sdpa_20260305_074749",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 810.636,
+      "avg_tps": 11.778333333333334
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_torch_lite3_sdpa_20260305_081253",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 823.6523333333333,
+      "avg_tps": 11.792333333333332
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_low2_ondemand_flash_20260305_1",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 837.8253333333332,
+      "avg_tps": 11.559
+    },
+    {
+      "candidate_run_root": "<redacted-path>",
+      "candidate_run_name": "r_non_ort_target_c_low2_20260304_1",
+      "hard_gate": true,
+      "strict_gate_pass": true,
+      "avg_ttft_ms": 1285.8316666666667,
+      "avg_tps": 10.719666666666667
+    }
+  ],
+  "summary_csv": "<redacted-path>",
+  "report_md": "<redacted-path>"
+}

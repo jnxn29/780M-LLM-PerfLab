@@ -1,0 +1,33 @@
+{
+  "schema_version": "run_v0",
+  "run_id": "sample_run_001",
+  "timestamp_utc": "2026-02-17T08:00:00Z",
+  "git_commit": "fixtures",
+  "commandline": "python harness/benchctl.py servebench --backend llama_cpp --workload workloads/w0_chat_200_200.yaml --tool aiperf --out results/sample_run_001/",
+  "backend": {
+    "name": "llama_cpp",
+    "version": "b0000"
+  },
+  "model": {
+    "path": "models/demo.gguf",
+    "sha256": "demo-model-sha256"
+  },
+  "workload": {
+    "path": "workloads/w0_chat_200_200.yaml",
+    "sha256": "workload-sha256-demo"
+  },
+  "system": {
+    "os_build": "10.0.26200",
+    "driver": "32.0.23017.1001",
+    "cpu": "AMD Ryzen 7 7840HS",
+    "gpu": "AMD Radeon 780M Graphics",
+    "ram_gb": 27.7
+  },
+  "reproducibility": {
+    "commands": [
+      "python harness/benchctl.py doctor --out results/sample_run_001/",
+      "python harness/benchctl.py servebench --backend llama_cpp --workload workloads/w0_chat_200_200.yaml --tool aiperf --out results/sample_run_001/",
+      "python harness/benchctl.py report --input results/sample_run_001/ --out reports/sample_run_001/"
+    ]
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://780m-llm-perf-lab/schemas/metrics_v0.schema.json",
+  "title": "Metrics Schema v0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "timestamp_utc",
+    "git_commit",
+    "track",
+    "backend",
+    "workload",
+    "system",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "metrics_v0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "git_commit": {
+      "type": "string",
+      "minLength": 1
+    },
+    "track": {
+      "type": "string",
+      "enum": [
+        "serving",
+        "engine"
+      ]
+    },
+    "backend": {
+      "type": "object",
+      "required": [
+        "name",
+        "version"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "model": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 8
+        }
+      },
+      "additionalProperties": true
+    },
+    "workload": {
+      "type": "object",
+      "required": [
+        "name",
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "minLength": 8
+        }
+      },
+      "additionalProperties": true
+    },
+    "system": {
+      "type": "object",
+      "required": [
+        "os_build",
+        "cpu",
+        "gpu",
+        "ram_gb"
+      ],
+      "properties": {
+        "os_build": {
+          "type": "string",
+          "minLength": 1
+        },
+        "driver": {
+          "type": "string"
+        },
+        "cpu": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gpu": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ram_gb": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "request": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "concurrency": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "prompt_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "ttft_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "itl_ms": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tps": {
+          "type": "number",
+          "minimum": 0
+        },
+        "rps": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pp_tps_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pp_tps_stddev": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tg_tps_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "tg_tps_stddev": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pg_tps_mean": {
+          "type": "number",
+          "minimum": 0
+        },
+        "pg_tps_stddev": {
+          "type": "number",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "track": {
+            "const": "serving"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metrics": {
+            "required": [
+              "ttft_ms",
+              "itl_ms",
+              "tps",
+              "rps"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "track": {
+            "const": "engine"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "metrics": {
+            "required": [
+              "pp_tps_mean",
+              "pp_tps_stddev",
+              "tg_tps_mean",
+              "tg_tps_stddev",
+              "pg_tps_mean",
+              "pg_tps_stddev"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true
+}

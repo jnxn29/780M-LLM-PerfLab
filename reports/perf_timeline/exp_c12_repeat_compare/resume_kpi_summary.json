@@ -1,0 +1,43 @@
+﻿{
+  "generated_at_utc": "2026-03-03T20:21:10Z",
+  "snapshot_inputs": {
+    "baseline_meta": "<redacted-path>",
+    "mid_meta": "<redacted-path>",
+    "optimized_meta": "<redacted-path>"
+  },
+  "included_runs": [
+    "r1_baseline",
+    "r2_flash_only",
+    "r3_compile_only",
+    "r4_flash_compile",
+    "r5_phi3_confirm"
+  ],
+  "excluded_runs": [],
+  "kpi": {
+    "r1_r5_avg_ttft_improve_pct": 37.896,
+    "r1_r4_min_ttft_improve_pct": 25.519,
+    "r5_ttft_improve_pct": 73.981,
+    "r5_tps_ratio": 3.991,
+    "r5_tps_guardrail_pass": true,
+    "hard_gate": true,
+    "all_hard": true,
+    "all_tps_95": true,
+    "all_ttft_targets": true
+  },
+  "optimized_runtime": {
+    "ttft_measurement_mode": "streaming_first_token",
+    "aiperf_endpoint_type": "chat",
+    "tiny_override": {
+      "concurrency": 2,
+      "request_count": 4,
+      "prompt_tokens_mean": 88,
+      "output_tokens_mean": 60
+    },
+    "phi3_override": {
+      "concurrency": 1,
+      "request_count": 2,
+      "prompt_tokens_mean": 64,
+      "output_tokens_mean": 32
+    }
+  }
+}

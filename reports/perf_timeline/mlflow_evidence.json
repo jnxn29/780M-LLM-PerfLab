@@ -1,0 +1,17 @@
+﻿{
+  "generated_at_utc": "2026-03-05T00:45:17Z",
+  "tracking_uri": "file:reports/mlruns",
+  "experiment_name": "780m_non_ort_release",
+  "run_name": "release_evidence_r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003_20260305_004515",
+  "selected_candidate_run_name": "r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003",
+  "selected_candidate_run_root": "<redacted-path>",
+  "mlflow_used": true,
+  "mlflow_error": null,
+  "metrics": {
+    "avg_ttft_ms": 716.041,
+    "avg_tps": 11.737,
+    "avg_ttft_improve_pct": 70.51484033333332,
+    "avg_tps_ratio": 3.742411
+  },
+  "source_summary_csv": "<redacted-path>"
+}

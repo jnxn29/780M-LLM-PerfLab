@@ -1,0 +1,18 @@
+name: v03_compare_broken_missing_field
+workload: workloads/w0_chat_200_200.yaml
+
+baseline:
+  label: llama_cpp
+  backend: llama_cpp
+  backend_version: unknown
+  model: models/demo.gguf
+  server_url: http://127.0.0.1:18080
+  # tool_output_jsonl intentionally missing for failure-path coverage
+
+candidate:
+  label: mlc_llm
+  backend: mlc_llm
+  backend_version: unknown
+  model: HF://Qwen2.5-7B-Instruct-q4f16_1-MLC
+  server_url: http://127.0.0.1:18081
+  tool_output_jsonl: fixtures/sample_tool_output_replay_candidate.jsonl

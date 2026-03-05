@@ -1,0 +1,6 @@
+﻿experiment_id,sdpa_profile_configured,sdpa_profile_effective,compile_requested,compile_enabled,compile_mode,compile_error,ttft_p50_ms,tps_mean,eligible,fallback_triggered,runtime_device_fallback,ttft_signal_source,ttft_request_latency_fallback_count,status,blocker_signature,torch_device,run_root
+O1,balanced,balanced,False,False,reduce-overhead,,390.227,4.942,True,False,False,time_to_first_token,0,success,,cuda,<repo-root>\results\r_operator_sidecar_20260302_183647\O1
+O2,flash_only,flash_only,False,False,reduce-overhead,,391.23,4.948,True,False,False,time_to_first_token,0,success,,cuda,<repo-root>\results\r_operator_sidecar_20260302_183647\O2
+O3,balanced,balanced,True,True,reduce-overhead,,393.627,4.934,True,False,False,time_to_first_token,0,success,,cuda,<repo-root>\results\r_operator_sidecar_20260302_183647\O3
+O4,flash_only,flash_only,True,True,reduce-overhead,,377.929,5.098,True,False,False,time_to_first_token,0,success,,cuda,<repo-root>\results\r_operator_sidecar_20260302_183647\O4
+

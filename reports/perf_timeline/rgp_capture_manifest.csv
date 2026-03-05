@@ -1,0 +1,14 @@
+﻿snapshot_id,backend,profile_id,target_csv_name,target_path,run_root,status
+N_B0,llama,L0,N_B0_llama_L0.csv,<repo-root>\reports\rgp_raw\N_B0_llama_L0.csv,<repo-root>\results\r_non_ort_deep12_20260304_4\N_B0,ok
+N_B0,mlc,M0,N_B0_mlc_M0.csv,<repo-root>\reports\rgp_raw\N_B0_mlc_M0.csv,<repo-root>\results\r_non_ort_deep12_20260304_4\N_B0,ok
+N_B0,torch_rocm,T0,N_B0_torch_rocm_T0.csv,<repo-root>\reports\rgp_raw\N_B0_torch_rocm_T0.csv,<repo-root>\results\r_non_ort_deep12_20260304_4\N_B0,ok
+r_non_ort_target_c_low1_20260304_1,llama,L0,r_non_ort_target_c_low1_20260304_1_llama_L0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low1_20260304_1_llama_L0.csv,<repo-root>\results\r_non_ort_target_c_low1_20260304_1,ok
+r_non_ort_target_c_low1_20260304_1,mlc,M0,r_non_ort_target_c_low1_20260304_1_mlc_M0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low1_20260304_1_mlc_M0.csv,<repo-root>\results\r_non_ort_target_c_low1_20260304_1,ok
+r_non_ort_target_c_low1_20260304_1,torch_rocm,T0,r_non_ort_target_c_low1_20260304_1_torch_rocm_T0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low1_20260304_1_torch_rocm_T0.csv,<repo-root>\results\r_non_ort_target_c_low1_20260304_1,ok
+r_non_ort_target_c_low2_20260304_1,llama,L0,r_non_ort_target_c_low2_20260304_1_llama_L0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low2_20260304_1_llama_L0.csv,<repo-root>\results\r_non_ort_target_c_low2_20260304_1,ok
+r_non_ort_target_c_low2_20260304_1,mlc,M0,r_non_ort_target_c_low2_20260304_1_mlc_M0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low2_20260304_1_mlc_M0.csv,<repo-root>\results\r_non_ort_target_c_low2_20260304_1,ok
+r_non_ort_target_c_low2_20260304_1,torch_rocm,T0,r_non_ort_target_c_low2_20260304_1_torch_rocm_T0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low2_20260304_1_torch_rocm_T0.csv,<repo-root>\results\r_non_ort_target_c_low2_20260304_1,ok
+r_non_ort_target_c_low3_20260304_1,llama,L0,r_non_ort_target_c_low3_20260304_1_llama_L0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low3_20260304_1_llama_L0.csv,<repo-root>\results\r_non_ort_target_c_low3_20260304_1,ok
+r_non_ort_target_c_low3_20260304_1,mlc,M0,r_non_ort_target_c_low3_20260304_1_mlc_M0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low3_20260304_1_mlc_M0.csv,<repo-root>\results\r_non_ort_target_c_low3_20260304_1,ok
+r_non_ort_target_c_low3_20260304_1,torch_rocm,T0,r_non_ort_target_c_low3_20260304_1_torch_rocm_T0.csv,<repo-root>\reports\rgp_raw\r_non_ort_target_c_low3_20260304_1_torch_rocm_T0.csv,<repo-root>\results\r_non_ort_target_c_low3_20260304_1,ok
+

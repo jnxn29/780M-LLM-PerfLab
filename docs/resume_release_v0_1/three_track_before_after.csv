@@ -1,0 +1,4 @@
+backend,before_snapshot,after_snapshot,before_profile,after_profile,before_ttft_ms,after_ttft_ms,ttft_improve_pct,before_tps,after_tps,tps_ratio
+llama,N_B0,r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003,L0,L0,1255.587000,443.011000,64.716822,6.453000,12.228000,1.894933
+mlc,N_B0,r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003,M0,M0,4629.093000,1574.600000,65.984697,11.210000,16.967000,1.513559
+torch_rocm,N_B0,r_non_ort_target_c_torch_lite_sdpa_r2_20260305_080003,T0,T0,1793.380000,462.173000,74.228942,0.869000,6.101000,7.020713

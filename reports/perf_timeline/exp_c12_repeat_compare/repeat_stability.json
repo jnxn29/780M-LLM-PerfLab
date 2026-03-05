@@ -1,0 +1,63 @@
+{
+  "generated_at_utc": "2026-03-03T20:21:10Z",
+  "repeat_labels": {
+    "a": "C12A",
+    "b": "C12B"
+  },
+  "all_hard": true,
+  "all_tps_95": true,
+  "repeat_stability_overall": true,
+  "excluded_runs": [],
+  "by_run": [
+    {
+      "run_name": "r1_baseline",
+      "hard_gate": true,
+      "tps_95_guard": true,
+      "C12A_vs_C12B_ttft_delta_ratio": 0.032655,
+      "C12A_vs_C12B_tps_delta_ratio": 0.026754,
+      "repeat_stable_ttft": true,
+      "repeat_stable_tps": true,
+      "repeat_stable": true
+    },
+    {
+      "run_name": "r2_flash_only",
+      "hard_gate": true,
+      "tps_95_guard": true,
+      "C12A_vs_C12B_ttft_delta_ratio": 0.063106,
+      "C12A_vs_C12B_tps_delta_ratio": 0.060293,
+      "repeat_stable_ttft": true,
+      "repeat_stable_tps": true,
+      "repeat_stable": true
+    },
+    {
+      "run_name": "r3_compile_only",
+      "hard_gate": true,
+      "tps_95_guard": true,
+      "C12A_vs_C12B_ttft_delta_ratio": 0.000712,
+      "C12A_vs_C12B_tps_delta_ratio": 0.009103,
+      "repeat_stable_ttft": true,
+      "repeat_stable_tps": true,
+      "repeat_stable": true
+    },
+    {
+      "run_name": "r4_flash_compile",
+      "hard_gate": true,
+      "tps_95_guard": true,
+      "C12A_vs_C12B_ttft_delta_ratio": 0.020702,
+      "C12A_vs_C12B_tps_delta_ratio": 0.011733,
+      "repeat_stable_ttft": true,
+      "repeat_stable_tps": true,
+      "repeat_stable": true
+    },
+    {
+      "run_name": "r5_phi3_confirm",
+      "hard_gate": true,
+      "tps_95_guard": true,
+      "C12A_vs_C12B_ttft_delta_ratio": 0.007075,
+      "C12A_vs_C12B_tps_delta_ratio": 0.02274,
+      "repeat_stable_ttft": true,
+      "repeat_stable_tps": true,
+      "repeat_stable": true
+    }
+  ]
+}
