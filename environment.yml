@@ -1,0 +1,12 @@
+name: 780m-perflab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - pytest==8.3.3
+      - ruff==0.9.10
+      - jsonschema==4.22.0
+      - pyyaml==6.0.2
+      - psutil>=5.9.0

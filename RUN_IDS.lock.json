@@ -1,0 +1,11 @@
+﻿{
+    "generated_at_utc":  "2026-03-05T12:29:22Z",
+    "source_root":  "../780m部署",
+    "release_root":  "../780m部署",
+    "snapshot_inputs":  {
+                            "baseline_meta":  "results/r_ttft_b0_stream_20260302_032533/meta/torch_push_pipeline_meta.json",
+                            "mid_meta":  "results/r_ttft_c06_t3p4_repeat_20260302_164040/meta/torch_push_pipeline_meta.json",
+                            "optimized_meta":  "results/r_ttft_c11_t88o60_p4_20260302_194224/meta/torch_push_pipeline_meta.json",
+                            "four_track_csv":  "docs/resume_release_v0_1/four_track_before_after.csv"
+                        }
+}

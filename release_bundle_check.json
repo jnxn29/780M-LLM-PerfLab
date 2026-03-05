@@ -1,0 +1,13 @@
+{
+  "generated_at_utc": "2026-03-05T12:29:29Z",
+  "release_root": ".",
+  "ready": true,
+  "checks": {
+    "missing_files": [],
+    "missing_dirs": [],
+    "forbidden_paths_found": [],
+    "encoding_issues": [],
+    "path_privacy_issues": [],
+    "release_readiness_ready": true
+  }
+}

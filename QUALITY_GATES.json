@@ -1,0 +1,12 @@
+﻿{
+    "generated_at_utc":  "2026-03-05T12:29:22Z",
+    "release_readiness_path":  "reports/perf_timeline/release_readiness.json",
+    "release_readiness_exists":  {
+
+                                 },
+    "repeat_stability_path":  "docs/resume_release_v0_1/repeat_stability.json",
+    "repeat_stability_exists":  {
+
+                                },
+    "release_ready":  true
+}
